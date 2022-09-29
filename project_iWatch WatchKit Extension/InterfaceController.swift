@@ -11,16 +11,15 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
-    override func awake(withContext context: Any?) {
-        // Configure interface objects here.
-    }
+
+    @IBOutlet weak var coinName: WKInterfaceLabel!
     
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-    }
     
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
+    let array = ["Орёл", "Решка"]
+    
+    @IBAction func buttonTapped() {
+        coinName.setText(array[Int.random(in: 0...array.count-1)])
     }
+
 
 }

@@ -21,13 +21,13 @@
 		0C72BA7728E5B5CD00A5ECE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C72BA7628E5B5CD00A5ECE8 /* Assets.xcassets */; };
 		0C72BA7D28E5B5CD00A5ECE8 /* project_iWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0C72BA7C28E5B5CD00A5ECE8 /* project_iWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		0C72BA8228E5B5CD00A5ECE8 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8128E5B5CD00A5ECE8 /* InterfaceController.swift */; };
-		0C72BA8428E5B5CD00A5ECE8 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8328E5B5CD00A5ECE8 /* ExtensionDelegate.swift */; };
 		0C72BA8628E5B5CD00A5ECE8 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8528E5B5CD00A5ECE8 /* NotificationController.swift */; };
 		0C72BA8828E5B5CD00A5ECE8 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8728E5B5CD00A5ECE8 /* ComplicationController.swift */; };
 		0C72BA8A28E5B5CE00A5ECE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C72BA8928E5B5CE00A5ECE8 /* Assets.xcassets */; };
 		0C72BA9628E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA9528E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppTests.swift */; };
 		0C72BAA028E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA9F28E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITests.swift */; };
 		0C72BAA228E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BAA128E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift */; };
+		0CB710C728E5B9C4005EFCEF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8328E5B5CD00A5ECE8 /* ExtensionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -558,7 +558,7 @@
 			files = (
 				0C72BA8628E5B5CD00A5ECE8 /* NotificationController.swift in Sources */,
 				0C72BA8828E5B5CD00A5ECE8 /* ComplicationController.swift in Sources */,
-				0C72BA8428E5B5CD00A5ECE8 /* ExtensionDelegate.swift in Sources */,
+				0CB710C728E5B9C4005EFCEF /* ExtensionDelegate.swift in Sources */,
 				0C72BA8228E5B5CD00A5ECE8 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
