@@ -1,0 +1,6 @@
+framework module Pods_project_iWatch_WatchKit_AppTests {
+  umbrella header "Pods-project_iWatch WatchKit AppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

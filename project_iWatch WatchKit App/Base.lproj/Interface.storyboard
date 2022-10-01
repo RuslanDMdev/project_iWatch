@@ -6,14 +6,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
     </dependencies>
     <scenes>
-        <!--bg-->
+        <!--bg3-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller backgroundImage="bg" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="project_iWatch_WatchKit_App" customModuleProvider="target">
+                <controller backgroundImage="bg3" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="project_iWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="1" alignment="center" verticalAlignment="bottom" title="Подбросить монетку" id="uEQ-ME-iEf">
+                        <button height="45" alignment="center" verticalAlignment="bottom" title="Подбросить монетку" backgroundImage="bg" id="uEQ-ME-iEf">
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <fontDescription key="font" type="system" pointSize="11"/>
+                            <fontDescription key="font" type="system" pointSize="12"/>
                             <connections>
                                 <action selector="buttonTapped" destination="AgC-eL-Hgc" id="ARx-hs-DCF"/>
                             </connections>
@@ -22,15 +22,17 @@
                         <label alignment="center" id="4Jn-TQ-i5O"/>
                     </items>
                     <connections>
+                        <outlet property="button" destination="uEQ-ME-iEf" id="usT-Yk-BtU"/>
                         <outlet property="coinName" destination="4Jn-TQ-i5O" id="era-UI-Zv1"/>
                         <outlet property="image" destination="rLU-0s-Ftb" id="fQg-KK-hbt"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.79797979797982" y="344.91735537190084"/>
         </scene>
     </scenes>
     <resources>
         <image name="bg" width="1584" height="2000"/>
+        <image name="bg3" width="1440" height="900"/>
     </resources>
 </document>

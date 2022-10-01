@@ -1,0 +1,6 @@
+framework module Pods_project_iWatch {
+  umbrella header "Pods-project_iWatch-umbrella.h"
+
+  export *
+  module * { export * }
+}

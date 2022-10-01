@@ -28,6 +28,11 @@
 		0C72BAA028E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA9F28E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITests.swift */; };
 		0C72BAA228E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BAA128E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift */; };
 		0CB710C728E5B9C4005EFCEF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8328E5B5CD00A5ECE8 /* ExtensionDelegate.swift */; };
+		39D5B1E52311C305E230E32F /* Pods_project_iWatch_WatchKit_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE523051473261731285B924 /* Pods_project_iWatch_WatchKit_AppTests.framework */; };
+		688497834BF5E5A924DB4DEF /* Pods_project_iWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC430E73D3A0D345F1073D28 /* Pods_project_iWatch.framework */; };
+		91EA755C264247021A7E4761 /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD13B6183A6C9FCE728A5CDB /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework */; };
+		D36E5D6835E090597D2D2DC1 /* Pods_project_iWatch_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3432AF9261FB912E5C0FFCF /* Pods_project_iWatch_WatchKit_App.framework */; };
+		F3902A2C82FFBFB6C3D3C7C4 /* Pods_project_iWatch_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99D5D3AB4DB9D4BB46B81852 /* Pods_project_iWatch_WatchKit_Extension.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +106,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		05BDD5B941EE1D4F34064FF7 /* Pods-project_iWatch WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit Extension.debug.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit Extension/Pods-project_iWatch WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
 		0C72BA4428E5B5C900A5ECE8 /* project_iWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = project_iWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C72BA4728E5B5C900A5ECE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C72BA4928E5B5C900A5ECE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,6 +136,20 @@
 		0C72BA9B28E5B5CE00A5ECE8 /* project_iWatch WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "project_iWatch WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C72BA9F28E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iWatch_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		0C72BAA128E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iWatch_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		1D0C72716D5AEA56F63AFE09 /* Pods-project_iWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit App/Pods-project_iWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		1EEA2910722BA2B9CBDA783C /* Pods-project_iWatch WatchKit AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit AppTests.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit AppTests/Pods-project_iWatch WatchKit AppTests.release.xcconfig"; sourceTree = "<group>"; };
+		284EAB3E6CA63BA39CE6789C /* Pods-project_iWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch.debug.xcconfig"; path = "Target Support Files/Pods-project_iWatch/Pods-project_iWatch.debug.xcconfig"; sourceTree = "<group>"; };
+		2B4E951D66D4167ED4C4C5D6 /* Pods-project_iWatch WatchKit AppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit AppTests.debug.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit AppTests/Pods-project_iWatch WatchKit AppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		528E39249A56E899E5D37E16 /* Pods-project_iWatch WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit Extension.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit Extension/Pods-project_iWatch WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+		5368BC3431F5716563E13068 /* Pods-project_iWatch WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit App.debug.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit App/Pods-project_iWatch WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		5B76F4B439431A395F98928A /* Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.debug.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests/Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		73440F235854525F796A8E23 /* Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests/Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		99D5D3AB4DB9D4BB46B81852 /* Pods_project_iWatch_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_iWatch_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3432AF9261FB912E5C0FFCF /* Pods_project_iWatch_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_iWatch_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC430E73D3A0D345F1073D28 /* Pods_project_iWatch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_iWatch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD13B6183A6C9FCE728A5CDB /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA0718B64C3AFADA9918AC2E /* Pods-project_iWatch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch/Pods-project_iWatch.release.xcconfig"; sourceTree = "<group>"; };
+		FE523051473261731285B924 /* Pods_project_iWatch_WatchKit_AppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_iWatch_WatchKit_AppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				688497834BF5E5A924DB4DEF /* Pods_project_iWatch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3902A2C82FFBFB6C3D3C7C4 /* Pods_project_iWatch_WatchKit_Extension.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +187,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39D5B1E52311C305E230E32F /* Pods_project_iWatch_WatchKit_AppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,6 +195,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91EA755C264247021A7E4761 /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7043BE29AA2DD53D0072F901 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D36E5D6835E090597D2D2DC1 /* Pods_project_iWatch_WatchKit_App.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +221,8 @@
 				0C72BA9428E5B5CE00A5ECE8 /* project_iWatch WatchKit AppTests */,
 				0C72BA9E28E5B5CE00A5ECE8 /* project_iWatch WatchKit AppUITests */,
 				0C72BA4528E5B5C900A5ECE8 /* Products */,
+				C56E0D4B0CA4A3BB9F2CCC2E /* Pods */,
+				F6080370079312437A1B1C30 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -277,6 +311,36 @@
 			path = "project_iWatch WatchKit AppUITests";
 			sourceTree = "<group>";
 		};
+		C56E0D4B0CA4A3BB9F2CCC2E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				284EAB3E6CA63BA39CE6789C /* Pods-project_iWatch.debug.xcconfig */,
+				FA0718B64C3AFADA9918AC2E /* Pods-project_iWatch.release.xcconfig */,
+				5368BC3431F5716563E13068 /* Pods-project_iWatch WatchKit App.debug.xcconfig */,
+				1D0C72716D5AEA56F63AFE09 /* Pods-project_iWatch WatchKit App.release.xcconfig */,
+				5B76F4B439431A395F98928A /* Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.debug.xcconfig */,
+				73440F235854525F796A8E23 /* Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.release.xcconfig */,
+				2B4E951D66D4167ED4C4C5D6 /* Pods-project_iWatch WatchKit AppTests.debug.xcconfig */,
+				1EEA2910722BA2B9CBDA783C /* Pods-project_iWatch WatchKit AppTests.release.xcconfig */,
+				05BDD5B941EE1D4F34064FF7 /* Pods-project_iWatch WatchKit Extension.debug.xcconfig */,
+				528E39249A56E899E5D37E16 /* Pods-project_iWatch WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F6080370079312437A1B1C30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC430E73D3A0D345F1073D28 /* Pods_project_iWatch.framework */,
+				C3432AF9261FB912E5C0FFCF /* Pods_project_iWatch_WatchKit_App.framework */,
+				CD13B6183A6C9FCE728A5CDB /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework */,
+				FE523051473261731285B924 /* Pods_project_iWatch_WatchKit_AppTests.framework */,
+				99D5D3AB4DB9D4BB46B81852 /* Pods_project_iWatch_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,10 +348,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C72BAAD28E5B5CE00A5ECE8 /* Build configuration list for PBXNativeTarget "project_iWatch" */;
 			buildPhases = (
+				9DAB07E485443572A927A782 /* [CP] Check Pods Manifest.lock */,
 				0C72BA4028E5B5C900A5ECE8 /* Sources */,
 				0C72BA4128E5B5C900A5ECE8 /* Frameworks */,
 				0C72BA4228E5B5C900A5ECE8 /* Resources */,
 				0C72BAAC28E5B5CE00A5ECE8 /* Embed Watch Content */,
+				08ECCA03DE7830CEAB875CDF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -339,8 +405,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C72BAA928E5B5CE00A5ECE8 /* Build configuration list for PBXNativeTarget "project_iWatch WatchKit App" */;
 			buildPhases = (
+				EF42252E292CD4894D708F33 /* [CP] Check Pods Manifest.lock */,
 				0C72BA6C28E5B5CB00A5ECE8 /* Resources */,
 				0C72BAA828E5B5CE00A5ECE8 /* Embed App Extensions */,
+				7043BE29AA2DD53D0072F901 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -356,6 +424,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C72BAA528E5B5CE00A5ECE8 /* Build configuration list for PBXNativeTarget "project_iWatch WatchKit Extension" */;
 			buildPhases = (
+				07C85DC5FBF1DD3EF4F9001E /* [CP] Check Pods Manifest.lock */,
 				0C72BA7828E5B5CD00A5ECE8 /* Sources */,
 				0C72BA7928E5B5CD00A5ECE8 /* Frameworks */,
 				0C72BA7A28E5B5CD00A5ECE8 /* Resources */,
@@ -373,6 +442,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C72BAB628E5B5CE00A5ECE8 /* Build configuration list for PBXNativeTarget "project_iWatch WatchKit AppTests" */;
 			buildPhases = (
+				D312B7EF1645BD9F978E4036 /* [CP] Check Pods Manifest.lock */,
 				0C72BA8D28E5B5CE00A5ECE8 /* Sources */,
 				0C72BA8E28E5B5CE00A5ECE8 /* Frameworks */,
 				0C72BA8F28E5B5CE00A5ECE8 /* Resources */,
@@ -391,6 +461,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0C72BAB928E5B5CE00A5ECE8 /* Build configuration list for PBXNativeTarget "project_iWatch WatchKit AppUITests" */;
 			buildPhases = (
+				1B4798411358170C46156188 /* [CP] Check Pods Manifest.lock */,
 				0C72BA9728E5B5CE00A5ECE8 /* Sources */,
 				0C72BA9828E5B5CE00A5ECE8 /* Frameworks */,
 				0C72BA9928E5B5CE00A5ECE8 /* Resources */,
@@ -523,6 +594,136 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07C85DC5FBF1DD3EF4F9001E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project_iWatch WatchKit Extension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08ECCA03DE7830CEAB875CDF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-project_iWatch/Pods-project_iWatch-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-project_iWatch/Pods-project_iWatch-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-project_iWatch/Pods-project_iWatch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1B4798411358170C46156188 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DAB07E485443572A927A782 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project_iWatch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D312B7EF1645BD9F978E4036 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project_iWatch WatchKit AppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF42252E292CD4894D708F33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-project_iWatch WatchKit App-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0C72BA4028E5B5C900A5ECE8 /* Sources */ = {
@@ -754,6 +955,7 @@
 		};
 		0C72BAA628E5B5CE00A5ECE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05BDD5B941EE1D4F34064FF7 /* Pods-project_iWatch WatchKit Extension.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -785,6 +987,7 @@
 		};
 		0C72BAA728E5B5CE00A5ECE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 528E39249A56E899E5D37E16 /* Pods-project_iWatch WatchKit Extension.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				CODE_SIGN_STYLE = Automatic;
@@ -817,6 +1020,7 @@
 		};
 		0C72BAAA28E5B5CE00A5ECE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5368BC3431F5716563E13068 /* Pods-project_iWatch WatchKit App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -843,6 +1047,7 @@
 		};
 		0C72BAAB28E5B5CE00A5ECE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D0C72716D5AEA56F63AFE09 /* Pods-project_iWatch WatchKit App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -870,6 +1075,7 @@
 		};
 		0C72BAAE28E5B5CE00A5ECE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284EAB3E6CA63BA39CE6789C /* Pods-project_iWatch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -900,6 +1106,7 @@
 		};
 		0C72BAAF28E5B5CE00A5ECE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA0718B64C3AFADA9918AC2E /* Pods-project_iWatch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -1015,6 +1222,7 @@
 		};
 		0C72BAB728E5B5CE00A5ECE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B4E951D66D4167ED4C4C5D6 /* Pods-project_iWatch WatchKit AppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1036,6 +1244,7 @@
 		};
 		0C72BAB828E5B5CE00A5ECE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EEA2910722BA2B9CBDA783C /* Pods-project_iWatch WatchKit AppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -1058,6 +1267,7 @@
 		};
 		0C72BABA28E5B5CE00A5ECE8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B76F4B439431A395F98928A /* Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1077,6 +1287,7 @@
 		};
 		0C72BABB28E5B5CE00A5ECE8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73440F235854525F796A8E23 /* Pods-project_iWatch WatchKit App-project_iWatch WatchKit AppUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;

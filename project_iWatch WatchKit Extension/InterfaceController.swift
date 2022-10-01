@@ -13,13 +13,17 @@ import UIKit
 class InterfaceController: WKInterfaceController {
 
 
+    @IBOutlet weak var button: WKInterfaceButton!
     @IBOutlet weak var coinName: WKInterfaceLabel!
     
     var coinImagesArray: [UIImage] = []
     
     @IBOutlet weak var image: WKInterfaceImage!
+    
 
         
+    
+    
 //    createCoinImagesArray(count: 76, name: "Coin")
     
     @IBAction func buttonTapped() {
@@ -33,8 +37,9 @@ class InterfaceController: WKInterfaceController {
             image.setImageNamed("tail")
             coinName.setText("Решка")
         }
+        
 
     }
 
-
 }
+
