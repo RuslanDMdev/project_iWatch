@@ -7,6 +7,7 @@
 
 import WatchKit
 import Foundation
+import UIKit
 
 
 class InterfaceController: WKInterfaceController {
@@ -14,11 +15,25 @@ class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var coinName: WKInterfaceLabel!
     
+    var coinImagesArray: [UIImage] = []
     
-    let array = ["Орёл", "Решка"]
+    @IBOutlet weak var image: WKInterfaceImage!
+
+        
+//    createCoinImagesArray(count: 76, name: "Coin")
     
     @IBAction func buttonTapped() {
-        coinName.setText(array[Int.random(in: 0...array.count-1)])
+        
+        let status = Bool.random()
+        
+        if status {
+            image.setImageNamed("head")
+            coinName.setText("Орёл")
+        } else {
+            image.setImageNamed("tail")
+            coinName.setText("Решка")
+        }
+
     }
 
 

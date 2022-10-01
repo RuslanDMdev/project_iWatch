@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="20037" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38"/>
+    <device id="watch45"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
@@ -9,7 +9,7 @@
         <!--bg-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller backgroundImage="bg" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="project_iWatch_WatchKit_App" customModuleProvider="target">
+                <controller backgroundImage="bg" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="project_iWatch_WatchKit_App" customModuleProvider="target">
                     <items>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Подбросить монетку" id="uEQ-ME-iEf">
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -18,10 +18,12 @@
                                 <action selector="buttonTapped" destination="AgC-eL-Hgc" id="ARx-hs-DCF"/>
                             </connections>
                         </button>
-                        <label alignment="center" verticalAlignment="center" id="TrT-Qa-NFF"/>
+                        <imageView alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="rLU-0s-Ftb"/>
+                        <label alignment="center" id="4Jn-TQ-i5O"/>
                     </items>
                     <connections>
-                        <outlet property="coinName" destination="TrT-Qa-NFF" id="V4e-wx-Fea"/>
+                        <outlet property="coinName" destination="4Jn-TQ-i5O" id="era-UI-Zv1"/>
+                        <outlet property="image" destination="rLU-0s-Ftb" id="fQg-KK-hbt"/>
                     </connections>
                 </controller>
             </objects>
