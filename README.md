@@ -12,6 +12,11 @@
 * Нужно исправить:
 * Cделать анимацию броска монетки в часах. 
 
+<img width="565" alt="Снимок экрана 2022-10-02 в 00 15 39" src="https://user-images.githubusercontent.com/91013665/193428589-583b9e4c-d7e4-47cf-bf8a-6ef00b768eea.png">
+<img width="766" alt="Снимок экрана 2022-10-02 в 00 15 25" src="https://user-images.githubusercontent.com/91013665/193428593-ed0be228-b5f0-44df-8139-4b563a1ed77b.png">
+
+
+
 ![Simulator Screen Shot - Apple Watch Series 7 - 45mm - 2022-10-01 at 22 55 19](https://user-images.githubusercontent.com/91013665/193426382-a769f4af-9493-4f1e-b878-0d58ecf8fcd2.png)
 
 ![Simulator Screen Shot - Apple Watch Series 7 - 45mm - 2022-10-01 at 22 55 23](https://user-images.githubusercontent.com/91013665/193426388-b75fc004-3584-4c40-918a-697e98eacca1.png)
