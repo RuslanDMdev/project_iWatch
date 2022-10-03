@@ -30,8 +30,8 @@ class ViewController: UIViewController {
         createCoinImagesArray(count: 53, name: "Coin")
         
         imageView2.snp.makeConstraints { make in
-            make.height.equalTo(220)
-            make.width.equalTo(220)
+            make.height.equalTo(350)
+            make.width.equalTo(400)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
         }
@@ -71,7 +71,7 @@ class ViewController: UIViewController {
         
         imageView2.image = nil
         flipCoinImages(imageView: imageView2, images: coinImagesArray)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.imageTapped((Any).self)
         }
 
