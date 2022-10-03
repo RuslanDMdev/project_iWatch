@@ -11,14 +11,28 @@ import SnapKit
 class ViewController: UIViewController {
 
     let label = UILabel()
-    @IBOutlet weak var imageView: UIButton!
+    let imageView2 = UIImageView()
+    var coinImagesArray: [UIImage] = []
+    
     @IBOutlet weak var button: UIButton!
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
         view.addSubview(label)
+        view.addSubview(imageView2)
+        
+        createCoinImagesArray(count: 53, name: "Coin")
+        
+        imageView2.snp.makeConstraints { make in
+            make.height.equalTo(220)
+            make.width.equalTo(220)
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
+        }
         
         label.textAlignment = .center
+        label.textColor = .white
         label.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(100)
@@ -26,12 +40,6 @@ class ViewController: UIViewController {
             make.height.equalTo(50)
         }
         
-        imageView.snp.makeConstraints { make in
-            make.height.equalTo(346)
-            make.width.equalTo(346)
-            make.centerX.equalToSuperview()
-            make.centerY.equalToSuperview()
-        }
         
         button.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
@@ -52,22 +60,54 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
-        let status = Bool.random()
-        
-        if status {
-            imageView.setImage(UIImage(named: "head"), for: .normal)
-            label.text = "Орёл"
-        } else {
-            imageView.setImage(UIImage(named: "tail"), for: .normal)
-            label.text = "Решка"
+        imageView2.image = nil
+        flipCoinImages(imageView: imageView2, images: coinImagesArray)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.05) {
+            self.imageTapped((Any).self)
         }
-        
-        
-        UIView.transition(with: imageView, duration: 0.3, options: .transitionFlipFromTop, animations: nil, completion: nil)
 
         
     }
     
+    @objc func imageTapped(_ sender: Any) {
+        let status = Bool.random()
+        
+        if status {
+            imageView2.image = UIImage(named: "head")
+            label.text = "Орёл"
+        } else {
+            imageView2.image = UIImage(named: "tail")
+            label.text = "Решка"
+        }
+ 
+        
+    }
+
+    
+    @objc func flipCoinButton() {
+        imageView2.image = nil
+        flipCoinImages(imageView: imageView2, images: coinImagesArray)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.05) {
+            self.imageTapped((Any).self)
+        }
+    }
+
+
+        func createCoinImagesArray(count: Int, name: String) {
+            for i in 1...count {
+                guard let imageName = UIImage(named: "\(name)\(i)") else { return }
+                coinImagesArray.append(imageName)
+              }
+            print(coinImagesArray)
+        }
+
+        func flipCoinImages(imageView: UIImageView, images: [UIImage]) {
+
+            imageView.animationImages = images
+            imageView.animationDuration = 1.0
+            imageView.animationRepeatCount = 1
+            imageView.startAnimating()
+        }
     
     
 }
