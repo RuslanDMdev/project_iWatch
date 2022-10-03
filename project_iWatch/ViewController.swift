@@ -22,10 +22,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!))
         view.addSubview(label)
         view.addSubview(imageView2)
         
+        
+        imageView2.image = UIImage(named: "head")
         createCoinImagesArray(count: 53, name: "Coin")
         
         imageView2.snp.makeConstraints { make in
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         
         label.textAlignment = .center
         label.textColor = .white
+        label.font = UIFont.boldSystemFont(ofSize: 25)
         label.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(100)
@@ -64,12 +66,15 @@ class ViewController: UIViewController {
     }
 
     @IBAction func buttonTapped(_ sender: Any) {
+        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!))
+        player.play()
+        
         imageView2.image = nil
         flipCoinImages(imageView: imageView2, images: coinImagesArray)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.05) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
             self.imageTapped((Any).self)
         }
-        player.play()
+
         
     }
     
@@ -78,10 +83,10 @@ class ViewController: UIViewController {
         
         if status {
             imageView2.image = UIImage(named: "head")
-            label.text = "Орёл"
+            label.text = "Орёл!"
         } else {
             imageView2.image = UIImage(named: "tail")
-            label.text = "Решка"
+            label.text = "Решка!"
         }
         
         
@@ -108,8 +113,8 @@ class ViewController: UIViewController {
         func flipCoinImages(imageView: UIImageView, images: [UIImage]) {
 
             imageView.animationImages = images
-            imageView.animationDuration = 1.0
-            imageView.animationRepeatCount = 1
+            imageView.animationDuration = 0.25
+            imageView.animationRepeatCount = 3
             imageView.startAnimating()
         }
     
