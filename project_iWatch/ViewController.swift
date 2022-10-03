@@ -7,9 +7,11 @@
 
 import UIKit
 import SnapKit
+import MediaPlayer
 
 class ViewController: UIViewController {
 
+    var player: AVPlayer!
     let label = UILabel()
     let imageView2 = UIImageView()
     var coinImagesArray: [UIImage] = []
@@ -19,6 +21,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!))
         view.addSubview(label)
         view.addSubview(imageView2)
         
@@ -65,7 +69,7 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.05) {
             self.imageTapped((Any).self)
         }
-
+        player.play()
         
     }
     
@@ -79,7 +83,7 @@ class ViewController: UIViewController {
             imageView2.image = UIImage(named: "tail")
             label.text = "Решка"
         }
- 
+        
         
     }
 
