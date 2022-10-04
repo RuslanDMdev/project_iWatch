@@ -29,6 +29,7 @@
 		0C72BAA228E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BAA128E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift */; };
 		0CB710C728E5B9C4005EFCEF /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C72BA8328E5B5CD00A5ECE8 /* ExtensionDelegate.swift */; };
 		0CD61BB728EB315D002EEAF1 /* coin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CD61BB628EB315D002EEAF1 /* coin.mp3 */; };
+		0CD61BBA28EC85A5002EEAF1 /* coin2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0CD61BB928EC85A5002EEAF1 /* coin2.mp3 */; };
 		39D5B1E52311C305E230E32F /* Pods_project_iWatch_WatchKit_AppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE523051473261731285B924 /* Pods_project_iWatch_WatchKit_AppTests.framework */; };
 		688497834BF5E5A924DB4DEF /* Pods_project_iWatch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC430E73D3A0D345F1073D28 /* Pods_project_iWatch.framework */; };
 		91EA755C264247021A7E4761 /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD13B6183A6C9FCE728A5CDB /* Pods_project_iWatch_WatchKit_App_project_iWatch_WatchKit_AppUITests.framework */; };
@@ -138,6 +139,7 @@
 		0C72BA9F28E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iWatch_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
 		0C72BAA128E5B5CE00A5ECE8 /* project_iWatch_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = project_iWatch_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0CD61BB628EB315D002EEAF1 /* coin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin.mp3; sourceTree = "<group>"; };
+		0CD61BB928EC85A5002EEAF1 /* coin2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = coin2.mp3; sourceTree = "<group>"; };
 		1D0C72716D5AEA56F63AFE09 /* Pods-project_iWatch WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit App.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit App/Pods-project_iWatch WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
 		1EEA2910722BA2B9CBDA783C /* Pods-project_iWatch WatchKit AppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch WatchKit AppTests.release.xcconfig"; path = "Target Support Files/Pods-project_iWatch WatchKit AppTests/Pods-project_iWatch WatchKit AppTests.release.xcconfig"; sourceTree = "<group>"; };
 		284EAB3E6CA63BA39CE6789C /* Pods-project_iWatch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project_iWatch.debug.xcconfig"; path = "Target Support Files/Pods-project_iWatch/Pods-project_iWatch.debug.xcconfig"; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				0C72BA4728E5B5C900A5ECE8 /* AppDelegate.swift */,
 				0C72BA4928E5B5C900A5ECE8 /* SceneDelegate.swift */,
 				0C72BA4B28E5B5C900A5ECE8 /* ViewController.swift */,
+				0CD61BB928EC85A5002EEAF1 /* coin2.mp3 */,
 				0CD61BB628EB315D002EEAF1 /* coin.mp3 */,
 				0C72BA4D28E5B5C900A5ECE8 /* Main.storyboard */,
 				0C72BA5028E5B5CB00A5ECE8 /* Assets.xcassets */,
@@ -544,6 +547,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CD61BBA28EC85A5002EEAF1 /* coin2.mp3 in Resources */,
 				0C72BA5428E5B5CB00A5ECE8 /* LaunchScreen.storyboard in Resources */,
 				0C72BA5128E5B5CB00A5ECE8 /* Assets.xcassets in Resources */,
 				0C72BA4F28E5B5C900A5ECE8 /* Main.storyboard in Resources */,

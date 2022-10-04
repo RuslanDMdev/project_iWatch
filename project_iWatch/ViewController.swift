@@ -13,46 +13,59 @@ class ViewController: UIViewController {
 
     var player: AVPlayer!
     let label = UILabel()
+    var labelHello = UILabel()
     let imageView2 = UIImageView()
     var coinImagesArray: [UIImage] = []
-    
-    @IBOutlet weak var button: UIButton!
+    var button = UIButton()
    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.addSubview(labelHello)
         view.addSubview(label)
         view.addSubview(imageView2)
+        view.addSubview(button)
         
         
         imageView2.image = UIImage(named: "head")
         createCoinImagesArray(count: 53, name: "Coin")
         
         imageView2.snp.makeConstraints { make in
-            make.height.equalTo(350)
-            make.width.equalTo(400)
+            make.height.equalTo(370)
+            make.width.equalTo(500)
             make.centerX.equalToSuperview()
             make.centerY.equalToSuperview()
         }
         
+        labelHello.text = "Нажми, свайпни или потряси!"
+        labelHello.font = UIFont.boldSystemFont(ofSize: 35)
+        labelHello.textColor = .white
+        labelHello.textAlignment = .center
+        labelHello.numberOfLines = 0
+        labelHello.snp.makeConstraints { make in
+//            make.centerX.equalToSuperview()
+            make.bottom.equalToSuperview().inset(100)
+            make.left.right.equalToSuperview().inset(40)
+        }
+            
+        label.text = "Испытай удачу!"
         label.textAlignment = .center
         label.textColor = .white
         label.font = UIFont.boldSystemFont(ofSize: 25)
         label.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.top.equalTo(100)
-            make.width.equalTo(100)
-            make.height.equalTo(50)
+            make.left.right.equalToSuperview().inset(40)
         }
+        
         
         
         button.snp.makeConstraints { make in
-            make.centerX.equalToSuperview()
-            make.bottom.equalToSuperview().inset(40)
-            make.height.equalTo(65)
-            make.width.equalTo(200)
+            make.width.equalToSuperview()
+            make.height.equalToSuperview()
         }
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         
         
         self.view.backgroundColor = UIColor(patternImage: UIImage(named:"bg")!)
@@ -61,24 +74,24 @@ class ViewController: UIViewController {
           let image: UIImage = UIGraphicsGetImageFromCurrentImageContext()!
           UIGraphicsEndImageContext()
           self.view.backgroundColor = UIColor(patternImage: image)
-        
+        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin2", ofType: "mp3")!))
         
     }
 
-    @IBAction func buttonTapped(_ sender: Any) {
-        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin", ofType: "mp3")!))
+    @objc func buttonTapped() {
+//        imageView2.image = nil
+        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin2", ofType: "mp3")!))
         player.play()
         
-        imageView2.image = nil
         flipCoinImages(imageView: imageView2, images: coinImagesArray)
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             self.imageTapped((Any).self)
         }
 
-        
+        labelHello.isHidden = true
     }
     
-    @objc func imageTapped(_ sender: Any) {
+     func imageTapped(_ sender: Any) {
         let status = Bool.random()
         
         if status {
@@ -91,16 +104,6 @@ class ViewController: UIViewController {
         
         
     }
-
-    
-    @objc func flipCoinButton() {
-        imageView2.image = nil
-        flipCoinImages(imageView: imageView2, images: coinImagesArray)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.05) {
-            self.imageTapped((Any).self)
-        }
-    }
-
 
         func createCoinImagesArray(count: Int, name: String) {
             for i in 1...count {
@@ -120,4 +123,3 @@ class ViewController: UIViewController {
     
     
 }
-
