@@ -1,5 +1,6 @@
 # project_iWatch
 Изучил и применил в данном приложении следующее:
+* Основы и понимание WatchKit
 * Верстка интерфейса для apple watch 
 * Понимание как реализуется приложение под watchOS
 
@@ -10,20 +11,21 @@
 * Верстка экрана для Iphone через Snapkit
 
 * Нужно исправить:
-* Cделать анимацию броска монетки в часах. 
+* 
 
-<img width="565" alt="Снимок экрана 2022-10-02 в 00 15 39" src="https://user-images.githubusercontent.com/91013665/193428589-583b9e4c-d7e4-47cf-bf8a-6ef00b768eea.png">
-<img width="766" alt="Снимок экрана 2022-10-02 в 00 15 25" src="https://user-images.githubusercontent.com/91013665/193428593-ed0be228-b5f0-44df-8139-4b563a1ed77b.png">
+<img width="626" alt="Снимок экрана 2022-10-05 в 22 58 42" src="https://user-images.githubusercontent.com/91013665/194151599-541b75d6-58c9-4604-8a85-03acbe7a3c4e.png">
+<img width="626" alt="Снимок экрана 2022-10-05 в 22 58 51" src="https://user-images.githubusercontent.com/91013665/194151713-b0bebd6c-faad-4406-9798-b08883eb92ef.png">
 
+<img width="297" alt="Снимок экрана 2022-10-05 в 22 29 58" src="https://user-images.githubusercontent.com/91013665/194151934-f84ac58c-51f6-4538-8ffd-b3b8f312869d.png">
 
+<img width="392" alt="Снимок экрана 2022-10-05 в 22 31 18" src="https://user-images.githubusercontent.com/91013665/194151951-b339a3ee-66d5-492c-89aa-876c57f1d394.png">
 
-![Simulator Screen Shot - Apple Watch Series 7 - 45mm - 2022-10-01 at 22 55 19](https://user-images.githubusercontent.com/91013665/193426382-a769f4af-9493-4f1e-b878-0d58ecf8fcd2.png)
-
-![Simulator Screen Shot - Apple Watch Series 7 - 45mm - 2022-10-01 at 22 55 23](https://user-images.githubusercontent.com/91013665/193426388-b75fc004-3584-4c40-918a-697e98eacca1.png)
 
 * Приложение для Iphone 
-<img width="340" alt="Снимок экрана 2022-10-01 в 23 04 58" src="https://user-images.githubusercontent.com/91013665/193426500-61a56773-ad9e-4a2e-a564-4a993fbe9851.png">
-<img width="371" alt="Снимок экрана 2022-10-01 в 23 05 52" src="https://user-images.githubusercontent.com/91013665/193426502-60d29af0-7f7a-4c4c-9d8b-0275f71a0023.png">
-<img width="340" alt="Снимок экрана 2022-10-01 в 23 04 47" src="https://user-images.githubusercontent.com/91013665/193426507-98f449ea-4f2c-4420-a131-02b52eb7837a.png">
 
+<img width="330" alt="Снимок экрана 2022-10-05 в 22 28 15" src="https://user-images.githubusercontent.com/91013665/194151986-dd606812-56ef-4d9f-a420-18e72f7cc6a4.png">
+
+<img width="330" alt="Снимок экрана 2022-10-05 в 22 28 35" src="https://user-images.githubusercontent.com/91013665/194152009-3db4682d-6785-4455-8e84-265c56ea0b43.png">
+
+<img width="368" alt="Снимок экрана 2022-10-05 в 22 27 38" src="https://user-images.githubusercontent.com/91013665/194152016-34a4ee5c-13f1-44d9-82ad-cd6460d9c5e2.png">
 
