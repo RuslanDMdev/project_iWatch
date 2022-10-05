@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
         <!--bg3-->
@@ -11,15 +12,15 @@
             <objects>
                 <controller backgroundImage="bg3" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="project_iWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button height="45" alignment="center" verticalAlignment="bottom" title="Подбросить монетку" backgroundImage="bg" id="uEQ-ME-iEf">
-                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <button width="112" height="52" alignment="center" verticalAlignment="bottom" id="uEQ-ME-iEf">
+                            <color key="backgroundColor" name="AccentColor"/>
                             <fontDescription key="font" type="system" pointSize="12"/>
                             <connections>
                                 <action selector="buttonTapped" destination="AgC-eL-Hgc" id="ARx-hs-DCF"/>
                             </connections>
                         </button>
-                        <imageView alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" id="rLU-0s-Ftb"/>
-                        <label alignment="center" id="4Jn-TQ-i5O"/>
+                        <imageView alignment="center" verticalAlignment="center" image="anim" contentMode="scaleAspectFit" animationDuration="2" id="rLU-0s-Ftb"/>
+                        <label alignment="center" text="Нажми" id="4Jn-TQ-i5O"/>
                     </items>
                     <connections>
                         <outlet property="button" destination="uEQ-ME-iEf" id="usT-Yk-BtU"/>
@@ -32,7 +33,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bg" width="1584" height="2000"/>
+        <image name="anim" width="128" height="128"/>
         <image name="bg3" width="1440" height="900"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
