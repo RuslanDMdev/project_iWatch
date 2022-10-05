@@ -20,8 +20,11 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var image: WKInterfaceImage!
     @IBAction func buttonTapped() {
   
-        image.setImageNamed("animation_images")
-//        coinAnimation()
+        image.setImageNamed("anim")
+        image.startAnimatingWithImages(in: NSRange(location: 1, length: 4), duration: 1, repeatCount: 3)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.coinAnimation()
+        }        
     }
     
     func coinAnimation(){

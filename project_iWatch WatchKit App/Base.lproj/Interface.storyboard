@@ -19,7 +19,7 @@
                                 <action selector="buttonTapped" destination="AgC-eL-Hgc" id="ARx-hs-DCF"/>
                             </connections>
                         </button>
-                        <imageView alignment="center" verticalAlignment="center" image="anim" contentMode="scaleAspectFit" animationDuration="2" id="rLU-0s-Ftb"/>
+                        <imageView alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" animationDuration="2" id="rLU-0s-Ftb"/>
                         <label alignment="center" text="Нажми" id="4Jn-TQ-i5O"/>
                     </items>
                     <connections>
@@ -33,7 +33,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="anim" width="128" height="128"/>
         <image name="bg3" width="1440" height="900"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
