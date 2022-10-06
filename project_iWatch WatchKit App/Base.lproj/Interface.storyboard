@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="20006"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
     </dependencies>
     <scenes>
         <!--bg3-->
@@ -12,19 +11,21 @@
             <objects>
                 <controller backgroundImage="bg3" fullScreen="YES" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="project_iWatch_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <button width="112" height="52" alignment="center" verticalAlignment="bottom" id="uEQ-ME-iEf">
-                            <color key="backgroundColor" name="AccentColor"/>
-                            <fontDescription key="font" type="system" pointSize="12"/>
+                        <button alignment="center" verticalAlignment="center" id="uEQ-ME-iEf">
+                            <group key="contentGroup" width="1" alignment="left" id="hGg-J2-2TG">
+                                <items>
+                                    <imageView alignment="center" verticalAlignment="center" isAccessibilityElement="YES" accessibilityIdentifier="image123" contentMode="scaleAspectFit" animationDuration="2" id="rLU-0s-Ftb"/>
+                                </items>
+                            </group>
                             <connections>
-                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="ARx-hs-DCF"/>
+                                <action selector="buttonTapped" destination="AgC-eL-Hgc" id="huQ-hh-w7L"/>
                             </connections>
                         </button>
-                        <imageView alignment="center" verticalAlignment="center" contentMode="scaleAspectFit" animationDuration="2" id="rLU-0s-Ftb"/>
-                        <label alignment="center" text="Нажми" id="4Jn-TQ-i5O"/>
+                        <label width="100" height="63" alignment="center" text="Нажми на монетку !" textAlignment="center" numberOfLines="2" id="4Jn-TQ-i5O"/>
                     </items>
                     <connections>
                         <outlet property="button" destination="uEQ-ME-iEf" id="usT-Yk-BtU"/>
-                        <outlet property="coinName" destination="4Jn-TQ-i5O" id="era-UI-Zv1"/>
+                        <outlet property="coinName" destination="4Jn-TQ-i5O" id="h5y-jp-jZT"/>
                         <outlet property="image" destination="rLU-0s-Ftb" id="fQg-KK-hbt"/>
                     </connections>
                 </controller>
@@ -34,8 +35,5 @@
     </scenes>
     <resources>
         <image name="bg3" width="1440" height="900"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
     </resources>
 </document>

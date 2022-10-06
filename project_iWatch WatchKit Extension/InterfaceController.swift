@@ -18,13 +18,21 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet weak var coinName: WKInterfaceLabel!
     var coinImagesArray: [UIImage] = []
     @IBOutlet weak var image: WKInterfaceImage!
+    override func awake(withContext context: Any?) {
+        image.setImageNamed("head")
+    }
+
+    
+    
     @IBAction func buttonTapped() {
   
         image.setImageNamed("anim")
-        image.startAnimatingWithImages(in: NSRange(location: 1, length: 4), duration: 1, repeatCount: 3)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+        image.startAnimatingWithImages(in: NSRange(location: 1, length: 53), duration: 0.25, repeatCount: 3)
+        player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin2", ofType: "mp3")!))
+        player.play()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.75) {
             self.coinAnimation()
-        }        
+        }
     }
     
     func coinAnimation(){
@@ -33,14 +41,12 @@ class InterfaceController: WKInterfaceController {
         
         if status {
             image.setImageNamed("head")
-            coinName.setText("Орёл")
-            player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin2", ofType: "mp3")!))
-            player.play()
+            coinName.setText("Орёл!")
+
         } else {
             image.setImageNamed("tail")
-            coinName.setText("Решка")
-            player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin2", ofType: "mp3")!))
-            player.play()
+            coinName.setText("Решка!")
+
         }
         
     }
