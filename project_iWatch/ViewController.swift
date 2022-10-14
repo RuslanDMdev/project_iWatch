@@ -44,7 +44,6 @@ class ViewController: UIViewController {
         labelHello.textAlignment = .center
         labelHello.numberOfLines = 0
         labelHello.snp.makeConstraints { make in
-//            make.centerX.equalToSuperview()
             make.bottom.equalToSuperview().inset(100)
             make.left.right.equalToSuperview().inset(40)
         }
@@ -79,7 +78,7 @@ class ViewController: UIViewController {
     }
 
     @objc func buttonTapped() {
-//        imageView2.image = nil
+
         player = AVPlayer(url: URL(fileURLWithPath: Bundle.main.path(forResource: "coin2", ofType: "mp3")!))
         player.play()
         
@@ -114,12 +113,11 @@ class ViewController: UIViewController {
         }
 
         func flipCoinImages(imageView: UIImageView, images: [UIImage]) {
-
+            
             imageView.animationImages = images
             imageView.animationDuration = 0.25
             imageView.animationRepeatCount = 3
             imageView.startAnimating()
+            
         }
-    
-    
 }

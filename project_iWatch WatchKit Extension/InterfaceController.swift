@@ -46,12 +46,6 @@ class InterfaceController: WKInterfaceController {
         } else {
             image.setImageNamed("tail")
             coinName.setText("Решка!")
-
         }
-        
     }
-
-
-    
 }
-
